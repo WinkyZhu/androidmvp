@@ -28,6 +28,18 @@ import android.widget.ProgressBar;
 import com.antonioleiva.mvpexample.app.R;
 import com.antonioleiva.mvpexample.app.main.MainActivity;
 
+
+/**
+ * MVP下Activity和Fragment以及View的子类体现在了这一 层，Activity一般也就做加载UI视图、设置监听再交由Presenter处理的一些工作，
+ *
+ * 所以也就需要持有相应Presenter的引用。
+ *
+ * 本层所需要做的操作就是在每一次有相应交互的时候，调用presenter的相关方法就行。（比如说，button点击）
+ *
+ *
+ * https://www.jianshu.com/p/9d40b298eca9
+ *
+ */
 public class LoginActivity extends Activity implements LoginView, View.OnClickListener {
 
     private ProgressBar progressBar;

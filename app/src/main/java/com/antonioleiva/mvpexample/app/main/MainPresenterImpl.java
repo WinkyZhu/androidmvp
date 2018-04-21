@@ -20,6 +20,14 @@ package com.antonioleiva.mvpexample.app.main;
 
 import java.util.List;
 
+/**
+ * 首先代理的构造器要传入视图和数据两个实例，然后通过调用这两个实例的方法来完成控制。
+ *
+ * 这里代理的几个任务有，①在视图销毁时设置解绑，②对列表项点击事件的响应，③在视图刚开始时控制视图显示等待中并开始控制数据源获取数据，④在数据获取完成后通过实现的回调接口将数据传给视图层。
+ *
+ * 需要注意的是代理实现了数据层的接口，以此来接收并处理数据。
+ */
+
 public class MainPresenterImpl implements MainPresenter, FindItemsInteractor.OnFinishedListener {
 
     private MainView mainView;

@@ -33,6 +33,10 @@ import com.antonioleiva.mvpexample.app.R;
 
 import java.util.List;
 
+/**
+ * 视图层拥有一个代理实例，将几个生命阶段的逻辑以及列表项 点击全部托管给代理进行处理，自己只负责实现接口中的几个UI操作方法。
+ */
+
 public class MainActivity extends Activity implements MainView, AdapterView.OnItemClickListener {
 
     private ListView listView;

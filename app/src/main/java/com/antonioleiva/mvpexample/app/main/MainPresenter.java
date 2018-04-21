@@ -18,6 +18,11 @@
 
 package com.antonioleiva.mvpexample.app.main;
 
+/**
+ * 代理层
+ * 视图层在调用onResume和onDestroy时的逻辑也要通过代理的方法实现
+ */
+
 public interface MainPresenter {
 
     void onResume();
