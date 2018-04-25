@@ -42,6 +42,7 @@ public interface LoginInteractor {
 /**
  * Interactor的作用实际上就是获取Model(从本地数据库，或者是服务器),转换成ViewModel，回调通知把ViewModel传递给Presenter。
  *
+ *
  * 一个Model也就是我们平常说的JavaBean，例如一个User类，它有自己的基本属性。姓名，年龄，用户名，密码等等。
  *
  * 而ViewModel代表的是视图的Model，例如一个登陆视图，它的ViewModel包含用户名，密码。
